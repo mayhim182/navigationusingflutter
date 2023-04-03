@@ -16,13 +16,16 @@ class Screen0 extends StatelessWidget {
 
             ElevatedButton(
               style: ButtonStyle(backgroundColor: MaterialStatePropertyAll(Colors.red)),
-              onPressed: (){},
+              onPressed: (){
+                Navigator.pushNamed(context, '/first');
+              },
               child: Text('Go To Screen1'),
             ),
             ElevatedButton(
               style: ButtonStyle(backgroundColor: MaterialStatePropertyAll(Colors.blue)),
               onPressed: (){
                 //Navigate to screen 2
+                Navigator.pushNamed(context, '/second');
               },
               child: Text('Go To Screen2'),
 
